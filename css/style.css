@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+/*-------------------CSS UNIVERSAL DO HEADER-------------------*/
+
+#login {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+#caixa-login {
+    width: 30vw;
+    height: 62vh;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: black;
+}
+
+#caixa-login h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: blueviolet;
+    font-size: 4.5em;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+
+#caixa-login label {
+    font-family: "Roboto Slab", serif;
+    color: blueviolet;
+    font-size: 1.5em;
+    margin: left auto;
+    margin-left: 1vw;
+    margin-top: 3vh;
+}
+
+#caixa-login input {
+    width: 25vw;
+    height: 4vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: black;
+}
+
+#caixa-login button {
+    width: 15vw;
+    height: 7vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5em;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    color: blueviolet;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+    position: fixed;
+    top: 0;
+}
+
+img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: 100;
+}
+
+#insta {
+    grid-column: 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+}
+
+#insta:hover {
+    transform: scale(1.2);
+}
+
+#insta img {
+    width: 3vw;
+    height: auto;
+    
+}
+
+#Logo {
+    width: 25vw;
+    height: 10vh;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#Logo h1 {
+    font-family: "Fredoka", sans-serif;
+}
+
+#Barra-pesquisa {
+    grid-column: 2;
+    grid-row: 1;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -9.5vw;
+}
+
+#form-pesquisa {
+    width: 40vw;
+    height: 4vh;
+    border: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    padding: 4px;
+    color: black;
+}
+
+#btn-pesquisar {
+    width: 4vh;
+    height: 4vh;
+    border: none;
+    outline: none;
+    background-color: #4895ef ;
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#btn-pesquisar:hover {
+    background-color: #3f37c9;
+}
+#carrinho {
+    grid-column: 3;
+    grid-row: 1;
+    width: 12vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -6vw;
+}
+
+#btn-carrinho {
+    width: 10vw;
+    height: 7vh;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    background-color: #4895ef;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vw;
+    transition: background-color 0.6s ease;
+}
+
+#btn-carrinho:hover {
+    transform: scale(1.05);
+    background-color: #3f37c9;
+}
+
+#btn-carrinho img {
+    height: 4vh;
+    width: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#btn-carrinho h3 {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: "Roboto Slab", serif;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+nav {
+    width: 100vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin-top: 10vh;
+    background-color: blueviolet;
+}
+
+#lista-nav {
+  display: flex;
+  list-style: none;
+  gap: 6vw;
+}
+
+#lista-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+
+main {
+    margin-top: 14vh;
+}
+
+article {
+    width: 250px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #565f96;
+    margin: 30px;
+    margin-top: -30vh;
+    transition: all 0.5s ease;
+    background-color: #50598f;
+}
+
+article:hover {
+    transform: scale(1.2);
+}
+
+.img-produto img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin-top: -10px;
+}
+
+.texto-produto {
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 10px;
+}
+
+.texto-produto h3 {
+    font-size: 1.5em;
+    color: #4895ef;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.texto-produto p {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+
+.texto-produto h4 {
+    font-size: 1.2em;
+    color: #04a946;
+    padding-bottom: 10px;
+}
+
+
+footer {
+    width: 100%;
+    height: 6vh;
+    background-color: #3c096c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 32%;
+    bottom: 0;
+}
+
+/*-------------------CSS PAGINA INDEX-------------------*/
+
+#inicio {
+    min-height: 120dvh;
+}
+
+#saudacoes {
+    width: 100%;
+    height: 60dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#texto-saudacoes {
+    width: 50dvw;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 20px;
+}
+
+#texto-saudacoes h1 {
+    font-size: 3vw;
+    color: blueviolet;
+}
+
+#texto-saudacoes p {
+    font-size: 1.5vw;
+}
+
+#img-saudacoes {
+    height: 60dvh;
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-saudacoes img {
+    width: 40dvw;
+    height: auto;
+}
+
+#lancamentos {
+    width: 100%;
+    height: 40dvh;
+}
+
+#lancamentos h2 {
+    color: #565f96;
+    font-size: 3vw;
+    padding-left: 20px;
+}
+
+#produtos {
+    display: flex;
+}
+
+#pritexto {
+    text-indent: 40px;
+}
+
+
+/*-------------------CSS PAGINA EQUIPE-------------------*/
+
+#Equipe {
+    width: 100dvw;
+    height: 83dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa-equipe {
+    width: 55dvw;
+    height: 60dvh;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+
+#title-equipe h1 {
+    color: #4895ef;
+    font-size: 3vw;
+    padding: 30px;
+}
+
+#Texto{
+    color: blueviolet;
+    font-size: 1.5vw;
+}
+
+#Texto li {
+    margin-left: 5vw;
+    padding-bottom: 25px;
+}
+/*-------------------CSS PAGINA CONTATOS-------------------*/
+
+#contatos {
+    width: 100dvw;
+    height: 83dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnFormulario {
+    color: black;
+}
+
+#formulario {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+#caixaFormulario {
+    width: 40dvw;
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+#caixaFormulario input {
+    color: black;
+}
+
+
+/*-------------------CSS PAGINA SOBRE-------------------*/
+#sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#caixa-sobre {
+    width: 36dvw;
+    height: 70dvh;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 30px;
+    border: 1px solid gray;
+    margin-left: 60px;
+    margin-right: auto;
+    margin-top: 4vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulo-sobre h2 {
+    color: #4895ef;
+    font-size: 2.5vw;
+    margin-bottom: 7vh;
+}
+
+#Texto-sobre p {
+    font-size: 1.4vw;
+    text-indent: 40px;
+}
+
+#Agradecimento-sobre h3 {
+    margin-top: 4vh;
+    color: #2979FF;
+    font-size: 1.9vw;
+    
+}
+
+#imgsobre img {
+    width: 50dvw;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 5vh;
+    margin-right: 4vw;
+    border-radius: 30px;
+}
+
+
+/*-------------------CSS PAGINA FLUXOGRAMA-------------------*/
+
+#Fluxograma{ 
+    background-color: black;
+     display: contents;
+    min-height: 150vh;
+    
+}
+.text-flu{
+   
+    
+     margin-left: 40%;
+      margin-top: 30vh;
+      
+}
+
+.text-flu h1 {
+    color: #4895ef;
+}
+.FLU-Img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 35px;
+   margin-top: 25vh;
+   margin-bottom: -18vh;
+}
+
+.FLU-Img img {
+    border-radius: 20px;
+    width: 37dvw;
+}
+
+#flu {
+    margin-right: 5dvw;
+}
+
+
+/*-------------------CSS PAGINA DER-------------------*/
+
+#brmodelo {
+    width: 100dvw;
+    height: 83dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#der {
+    width: 50dvw;
+    height: 83dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#der img {
+    width: 45dvw;
+    height: auto;
+    border-radius: 20px;
+}
+
+#mer {
+    width: 50dvw;
+    height: 83dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#mer img {
+    width: 45dvw;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/*-------------------CSS PAGINA PRODUTOS-------------------*/
+
+#produtos {
+    width: 100dvw;
+    height: 83dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

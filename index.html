@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="./img/logo.jpeg">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>EXTech | Inicio</title>
+  </head>
+  <body>
+    <!-- ============== POP-UP LOGIN FAKE ============== -->
+
+    <div id="login">
+      <div id="caixa-login">
+        <h1>Log-in</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" />
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" placeholder="Ex: meuemail@gmail.com" />
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" placeholder="Digite sua senha" />
+
+        <button id="entrar">Entrar</button>
+      </div>
+    </div>
+
+    <!-- ============== CODIGO UNIVERSAL HEADER ============== -->
+
+    <header>
+      <div id="Logo">
+        <img src="./img/txtlogo.jpeg" alt="Logo" />
+      </div>
+
+      <div id="Barra-pesquisa">
+        <input
+          type="search"
+          class="form-pesquisa"
+          id="form-pesquisa"
+          placeholder="O que você procura?"
+        />
+        <button id="btn-pesquisar">🔍︎</button>
+      </div>
+
+      <div id="carrinho">
+        <button id="btn-carrinho">
+          <img src="./img/carrinho.svg" alt="Carrinho" />
+          <h3>CARRINHO</h3>
+        </button>
+      </div>
+
+      <div id="insta">
+        <a href="https://www.instagram.com/extech_loja_de_informatica?utm_source=qr&igsi=Y3F1eDZydWM4ZTgz">
+          <img src="./img/icone-instragam.svg" alt="">
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <ul id="lista-nav">
+        <li><a href="index.html" class="nava">> Inicio <</a></li>
+        <li><a href="Sobre.html" class="nava">Sobre</a></li>
+        <li><a href="Produtos.html" class="nava">Produtos</a></li>
+        <li><a href="Contato.html" class="nava">Contato</a></li>
+        <li><a href="Fluxograma.html" class="nava">Fluxograma</a></li>
+        <li><a href="Equipe.html" class="nava">Equipe</a></li>
+        <li><a href="der.html" class="nava">Der/Mer</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============== CODIGO ABA INICIO ============== -->
+
+    <main id="inicio">
+        <div id="saudacoes">
+            <div id="texto-saudacoes">
+                <h1>Bem-vindo a EXTech!</h1>
+                <br/>
+                <p id="pritexto">Aqui vamos te ajudar a escolher as melhores e de mais alta qualidade peças para o seu setup!</p>
+                <br/>
+                <br/>
+                <p>Na EXTech, nós vamos te ajudar com o melhor preço e serviço!</p>
+            </div>
+            <div id="img-saudacoes">
+                <img src="./img/logo.jpeg" alt="logo site">
+            </div>
+        </div>
+
+        <section id="lancamentos">
+            <h2>Lançamentos</h2>
+            <div id="produtos">
+
+            <article>
+                <div class="img-produto">
+                    <img src="./img/produtos/rtx5090.jpeg" alt="RTX 5090">
+                </div>
+                <div class="texto-produto">
+                    <h3>RTX 5090</h3>
+                    <p>Placa de vídeo de alta qualidade, com desempenho excepcional para jogos e aplicações gráficas.</p>
+                    <h4>R$ 30.000,00</h4>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-produto">
+                    <img src="./img/produtos/ryzen5600gt.jpg" alt="Ryzen 5 5600gt">
+                </div>
+                <div class="texto-produto">
+                    <h3>Ryzen 5 5600 GT</h3>
+                    <p>Processor intermediario, com gráfico integrado e desempenho regular.</p>
+                    <h4>R$ 900,00</h4>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-produto">
+                    <img src="./img/produtos/rtx4060.jpg" alt="RTX 4060">
+                </div>
+                <div class="texto-produto">
+                    <h3>RTX 4060</h3>
+                    <p>Placa de vídeo mediana, com desempenho mediano para jogos e aplicações gráficas.</p>
+                    <h4>R$ 4.000,00</h4>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-produto">
+                    <img src="./img/produtos/tscold.jpg" alt="pasta termica ts cold">
+                </div>
+                <div class="texto-produto">
+                    <h3>TS Cold</h3>
+                    <p>Pasta térmica excelente, com a melhor condutividade térmica pelo preço.</p>
+                    <h4>R$ 15,00</h4>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-produto">
+                    <img src="./img/produtos/x3mesh.jpg" alt="gabinete mesh x3">
+                </div>
+                <div class="texto-produto">
+                    <h3>Montech X3 Mesh</h3>
+                    <p>Gabinete excelente, com uma boa circulação de ar.</p>
+                    <h4>R$ 300,00</h4>
+                </div>
+            </article>
+
+            <article>
+                <div class="img-produto">
+                    <img src="./img/produtos/monitorlg.jpg" alt="monitor lg">
+                </div>
+                <div class="texto-produto">
+                    <h3>Monitor LG UltraGear</h3>
+                    <p>Monitor top, com 160Hz e uma otima resolução.</p>
+                    <h4>R$ 800,00</h4>
+                </div>
+            </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EXTech | Desenvolvido por alunos da Etec.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
